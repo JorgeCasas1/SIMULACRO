@@ -61,3 +61,26 @@ def vocales (lista):
         contador+=1
     return contador
 print(vocales(['a','e','i','o','u']))
+
+# Lista invertida de numeros
+def invertidos(numeros):
+    return numeros[::-1]
+        
+        
+print(invertidos([1,2,3,4]))
+
+## Crea una función que reciba una lista de números y devuelva el valor máximo y mínimo de la lista.
+
+def maxMin(numeros):
+    if len(numeros) == 0:
+        return None
+    max = numeros[0]
+    min = numeros [0]
+    for i in numeros:
+        if i > max:
+            max = i
+        if i < min:
+            min= i
+    return {"Minimo": min,"Máximo": max}
+        
+print(maxMin([2,3,4,5]))
