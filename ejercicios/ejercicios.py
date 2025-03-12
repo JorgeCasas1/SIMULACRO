@@ -42,4 +42,22 @@ def tabla(numero):
 
 # Llamada a la función
 print(tabla(1))  # Esto devolverá la tabla del 1
- #HOLA MUNDO
+
+##  Escribe una función que recibe una lista de números y devuelva el promedio de los mismos
+
+def promedio (lista):
+    contador = 0
+    for i in lista:
+            contador+= i
+    return contador/len(lista)
+
+print(promedio([2, 3, 3]))
+
+## Define una función que reciba una cadena de texto y cuente cuántas vocales (a, e, i, o, u) contiene
+
+def vocales (lista):
+    contador = 0
+    for i in lista:
+        contador+=1
+    return contador
+print(vocales(['a','e','i','o','u']))
